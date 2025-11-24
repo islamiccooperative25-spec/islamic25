@@ -85,4 +85,7 @@ test-results/
 coverage-reports/
 
 # Local data files
-server/data/users.json 
+server/data/users.json
+
+# Vercel
+.vercel

@@ -222,6 +222,23 @@ npm test
 - Press `Ctrl + C` in the terminal to stop the development server
 - Or close the terminal window
 
+## Deployment
+
+This project is configured for deployment on Vercel with a Neon database.
+
+### 1. Set up a Neon Database
+
+1.  Go to [Neon](https://neon.tech/) and create a new project.
+2.  In your project dashboard, find your connection string. It will look something like this: `postgresql://user:password@host:port/dbname`.
+3.  You will use this connection string in the Vercel deployment.
+
+### 2. Deploy to Vercel
+
+1.  Create a new project on Vercel and connect it to your Git repository.
+2.  Vercel should automatically detect that this is a Node.js project.
+3.  In the "Environment Variables" section, add a new variable called `DATABASE_URL` and paste your Neon connection string as the value.
+4.  Click "Deploy". Vercel will build and deploy your application.
+
 ## File Structure
 
 ```
