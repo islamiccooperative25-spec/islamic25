@@ -55,7 +55,23 @@ npm install
 cd ..
 ```
 
-### Step 3: Verify Installation
+### Step 3: Configuration
+
+1. Copy the example environment file:
+   ```bash
+   cp env.example .env
+   ```
+
+2. Edit `.env` and set your configuration:
+   - `DATABASE_URL`: Your PostgreSQL connection string.
+   - `JWT_SECRET`: A secure random string for authentication.
+
+3. Initialize the database schema:
+   ```bash
+   npm run migrate
+   ```
+
+### Step 4: Verify Installation
 ```bash
 # Check Node.js version
 node --version
