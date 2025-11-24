@@ -222,6 +222,16 @@ npm test
 - Press `Ctrl + C` in the terminal to stop the development server
 - Or close the terminal window
 
+### Local Development Setup
+
+For local development, you will need to create a `.env` file in the root of the project. You can copy the `env.example` file as a template:
+
+```bash
+cp env.example .env
+```
+
+Then, open the `.env` file and add your Neon database connection string to the `DATABASE_URL` variable.
+
 ## Deployment
 
 This project is configured for deployment on Vercel with a Neon database.
